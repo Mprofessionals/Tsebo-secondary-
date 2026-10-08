@@ -1,0 +1,459 @@
+/* Tsebo Secondary School — Official Theme (Phuthaditjhaba, Free State) */
+
+:root {
+  --tsebo-royal: #0C3B7A;
+  --tsebo-royal-dark: #072247;
+  --tsebo-royal-light: #1859B3;
+  --tsebo-gold: #E5A93C;
+  --tsebo-gold-dark: #C27D13;
+  --tsebo-gold-light: #FEF3C7;
+  --tsebo-green: #15803D;
+  --tsebo-green-light: #DCFCE7;
+  --tsebo-dark: #0F172A;
+  --tsebo-charcoal: #334155;
+  --tsebo-slate: #64748B;
+  --tsebo-light-bg: #F8FAFC;
+  --tsebo-card-bg: #FFFFFF;
+  --tsebo-border: rgba(12, 59, 122, 0.12);
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #F8FAFC;
+  color: var(--tsebo-charcoal);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::selection {
+  background-color: rgba(229, 169, 60, 0.3);
+  color: var(--tsebo-royal-dark);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--tsebo-royal-light);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--tsebo-royal-dark);
+}
+
+/* Typography Utilities */
+.font-serif-school {
+  font-family: var(--font-serif);
+}
+
+.text-royal {
+  color: var(--tsebo-royal) !important;
+}
+
+.text-royal-dark {
+  color: var(--tsebo-royal-dark) !important;
+}
+
+.text-gold {
+  color: var(--tsebo-gold-dark) !important;
+}
+
+.text-gold-bright {
+  color: var(--tsebo-gold) !important;
+}
+
+.bg-royal {
+  background-color: var(--tsebo-royal) !important;
+}
+
+.bg-royal-dark {
+  background-color: var(--tsebo-royal-dark) !important;
+}
+
+.bg-royal-light {
+  background-color: var(--tsebo-royal-light) !important;
+}
+
+.bg-gold-light {
+  background-color: var(--tsebo-gold-light) !important;
+}
+
+.bg-light-soft {
+  background-color: #F8FAFC !important;
+}
+
+.border-royal-subtle {
+  border-color: var(--tsebo-border) !important;
+}
+
+/* Top Notification Strip */
+.top-notice-bar {
+  background-color: var(--tsebo-royal-dark);
+  color: #E2E8F0;
+  font-size: 0.78rem;
+  padding: 0.45rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar */
+.navbar-tsebo {
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(12, 59, 122, 0.08);
+  padding: 0.85rem 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(12, 59, 122, 0.06);
+}
+
+.navbar-tsebo.scrolled {
+  padding: 0.55rem 0;
+  box-shadow: 0 8px 30px rgba(12, 59, 122, 0.12);
+}
+
+.school-crest {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px solid var(--tsebo-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(12, 59, 122, 0.2);
+  flex-shrink: 0;
+}
+
+.school-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #FFFFFF;
+  display: block;
+}
+
+.school-logo-lg {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid var(--tsebo-gold);
+  background: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.nav-link-tsebo {
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--tsebo-charcoal) !important;
+  text-transform: uppercase;
+  padding: 0.5rem 0.85rem !important;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.nav-link-tsebo:hover,
+.nav-link-tsebo.active {
+  color: var(--tsebo-royal) !important;
+  background-color: var(--tsebo-gold-light);
+}
+
+/* Buttons */
+.btn-tsebo-primary {
+  background: linear-gradient(135deg, var(--tsebo-royal) 0%, var(--tsebo-royal-light) 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-size: 0.82rem;
+  border-radius: 6px;
+  padding: 0.75rem 1.6rem;
+  border: 1px solid var(--tsebo-gold);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 14px rgba(12, 59, 122, 0.25);
+}
+
+.btn-tsebo-primary:hover {
+  background: linear-gradient(135deg, var(--tsebo-royal-dark) 0%, var(--tsebo-royal) 100%);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(12, 59, 122, 0.35);
+}
+
+.btn-tsebo-gold {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  font-size: 0.82rem;
+  border-radius: 6px;
+  padding: 0.75rem 1.6rem;
+  border: none;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+}
+
+.btn-tsebo-gold:hover {
+  background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(217, 119, 6, 0.4);
+}
+
+.btn-tsebo-outline {
+  background-color: transparent;
+  color: var(--tsebo-royal);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-size: 0.82rem;
+  border-radius: 6px;
+  padding: 0.7rem 1.5rem;
+  border: 1.5px solid var(--tsebo-royal);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.btn-tsebo-outline:hover {
+  background-color: var(--tsebo-royal);
+  color: #FFFFFF;
+}
+
+.btn-tsebo-outline-white {
+  background-color: transparent;
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  font-size: 0.82rem;
+  border-radius: 6px;
+  padding: 0.7rem 1.5rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.btn-tsebo-outline-white:hover {
+  background-color: #FFFFFF;
+  color: var(--tsebo-royal);
+  border-color: #FFFFFF;
+}
+
+/* Hero Section */
+.school-hero-section {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--tsebo-royal-dark);
+  padding: 7rem 0 5rem 0;
+  overflow: hidden;
+}
+
+.hero-backdrop-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.42) contrast(1.1);
+  z-index: 1;
+}
+
+.hero-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(7, 34, 71, 0.95) 0%, rgba(12, 59, 122, 0.84) 50%, rgba(24, 89, 179, 0.65) 100%);
+  z-index: 2;
+}
+
+.hero-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(254, 243, 199, 0.4);
+  border-radius: 30px;
+  padding: 0.4rem 1.1rem;
+  color: #FEF3C7;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+}
+
+.hero-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(2.3rem, 4.8vw, 4.2rem);
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.15;
+}
+
+/* Stat Cards */
+.stat-card-school {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(12, 59, 122, 0.08);
+  box-shadow: 0 10px 25px rgba(12, 59, 122, 0.04);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.stat-card-school:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(12, 59, 122, 0.08);
+}
+
+/* Pass Rate Special Badge */
+.pass-rate-hero-pill {
+  background: linear-gradient(135deg, #15803D 0%, #166534 100%);
+  color: #FFFFFF;
+  padding: 0.5rem 1.2rem;
+  border-radius: 30px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 800;
+  box-shadow: 0 4px 15px rgba(22, 101, 52, 0.35);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+/* Feature Boxes */
+.feature-box {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(12, 59, 122, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-box:hover {
+  border-color: var(--tsebo-gold);
+  box-shadow: 0 12px 30px rgba(12, 59, 122, 0.08);
+}
+
+.icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+}
+
+/* Filter Pills */
+.academic-filter-pill {
+  background-color: #FFFFFF;
+  color: var(--tsebo-charcoal);
+  border: 1px solid rgba(12, 59, 122, 0.12);
+  border-radius: 30px;
+  padding: 0.55rem 1.3rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.academic-filter-pill:hover {
+  border-color: var(--tsebo-gold);
+  color: var(--tsebo-royal);
+}
+
+.academic-filter-pill.active {
+  background-color: var(--tsebo-royal);
+  color: #FFFFFF;
+  border-color: var(--tsebo-gold);
+  box-shadow: 0 4px 12px rgba(12, 59, 122, 0.25);
+}
+
+/* Event Badge */
+.event-badge-date {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--tsebo-royal);
+  border: 1px solid var(--tsebo-gold);
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+/* Floating WhatsApp Bar */
+.floating-call-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 1040;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  border-radius: 50px;
+  padding: 0.75rem 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  box-shadow: 0 10px 25px rgba(18, 140, 126, 0.35);
+  transition: transform 0.25s ease;
+}
+
+.floating-call-btn:hover {
+  color: #FFFFFF;
+  transform: scale(1.05);
+}
+
+/* Step Number */
+.step-number {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--tsebo-royal);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+  border: 1.5px solid var(--tsebo-gold);
+}
