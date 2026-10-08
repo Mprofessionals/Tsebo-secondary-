@@ -1,6 +1,0 @@
-{
-  "name": "Tsebo Secondary School",
-  "description": "Official website for Tsebo Secondary School in Phuthaditjhaba, Free State, South Africa. Celebrating academic excellence with a 97% Matric pass rate.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
